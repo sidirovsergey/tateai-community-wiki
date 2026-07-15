@@ -6,39 +6,39 @@ Auto-generated from a Telegram Desktop chat export. Structured for two consumers
 
 ## Provenance
 - Chat: **Terminal of Tate $TateAI**
-- Export window: 2024-10-26 .. 2025-07-04
-- Total messages: 148574 (+522 service events)
-- Days covered: 252
-- Retrieval chunks: 5068
+- Export window: 2024-10-26 .. 2026-07-15
+- Total messages: 164440 (+913 service events)
+- Days covered: 628
+- Retrieval chunks: 5772
 - All timestamps: UTC+05:00 (as recorded by Telegram export)
 - Media (photos/video/voice/stickers) is referenced by type + original filename only — content was NOT captioned or transcribed in this pass.
 
 ## Top participants (by message count)
-- Deleted Account: 33542
-- Limalemon: 9153
-- Orchestra | Lima MAXI: 4515
+- Deleted Account: 33803
+- Limalemon: 11045
+- Cloud Fortune: 4847
+- rgk1: 4784
+- Orchestra | Lima MAXI: 4671
 - G (always lucky 🍀): 4474
-- rgk1: 4060
-- Cloud Fortune: 3926
+- Widelton: 3385
+- Sergei: 3026
+- Jame S: 2799
 - Arthur: 2649
-- Widelton: 2410
-- Ben: 2393
+- BoB: 2625
+- Ben: 2466
+- sbzgh: 2371
 - Marcin Krukowski: 2362
-- Jame S: 2348
-- Sergei: 2317
+- Gabriel: 2338
 - Dom: 2134
 - T: 1882
 - Crpt4l: 1798
-- BoB: 1780
 - Hokus Pokus: 1761
 - 0xVoid ✈️: 1737
 - IGelo: 1637
 - Ri -ShadowAssassin: 1557
-- Gabriel: 1440
-- Whale 🐳: 1416
+- E: 1459
+- Whale 🐳: 1420
 - B: 1388
-- E: 1371
-- Otter Krafter: 1288
 
 ## Files
 - `logs/<month>/<day>.md` — full day transcripts, one line per message, clearly timestamped/attributed

@@ -1,47 +1,45 @@
 # Terminal of Tate $TateAI — LLM Wiki
 
-Auto-generated from a Telegram Desktop chat export. Structured for two consumers:
-1. **Humans** — browse `logs/<YYYY-MM>/<YYYY-MM-DD>.md` for a readable day-by-day transcript.
-2. **The `/ask` bot** — reads `index/chunks.json`, a flat array of ~30-message chunks used for keyword retrieval + LLM grounding.
+A knowledge base about the **Terminal of Tate $TateAI** Telegram community,
+built following the "LLM Wiki" pattern (an LLM incrementally compiles raw
+sources into a persistent, cross-linked wiki, instead of re-deriving answers
+from scratch on every query). See `SCHEMA.md` for the full pattern and how
+this repo follows it.
+
+## Two layers
+
+1. **`raw/`** — immutable source of truth. Full day-by-day transcripts
+   parsed from Telegram Desktop exports, one file per day, every message
+   timestamped and attributed.
+2. **`wiki/`** — the actual knowledge base. LLM-synthesized entity pages
+   (people), concept pages (lore, running jokes, things that need
+   disambiguating), an overview, a timeline, and an index. **Start at
+   [`wiki/index.md`](wiki/index.md).**
 
 ## Provenance
+
 - Chat: **Terminal of Tate $TateAI**
 - Export window: 2024-10-26 .. 2026-07-15
-- Total messages: 164440 (+913 service events)
-- Days covered: 628
-- Retrieval chunks: 5772
+- Total messages: 164,440 (+913 service events), 628 days covered
 - All timestamps: UTC+05:00 (as recorded by Telegram export)
-- Media (photos/video/voice/stickers) is referenced by type + original filename only — content was NOT captioned or transcribed in this pass.
-
-## Top participants (by message count)
-- Deleted Account: 33803
-- Limalemon: 11045
-- Cloud Fortune: 4847
-- rgk1: 4784
-- Orchestra | Lima MAXI: 4671
-- G (always lucky 🍀): 4474
-- Widelton: 3385
-- Sergei: 3026
-- Jame S: 2799
-- Arthur: 2649
-- BoB: 2625
-- Ben: 2466
-- sbzgh: 2371
-- Marcin Krukowski: 2362
-- Gabriel: 2338
-- Dom: 2134
-- T: 1882
-- Crpt4l: 1798
-- Hokus Pokus: 1761
-- 0xVoid ✈️: 1737
-- IGelo: 1637
-- Ri -ShadowAssassin: 1557
-- E: 1459
-- Whale 🐳: 1420
-- B: 1388
+- `wiki/`: 21 entity pages, 8 concept pages, overview + timeline, built
+  2026-07-16 — see `wiki/log.md` for the build history
+- Media (photos/video/voice/stickers) is referenced by type + original
+  filename only — content was not captioned or transcribed in this pass
+- The chat's raw language is uncensored community banter (profanity, slurs,
+  dark humor) — preserved faithfully in `raw/`, and quoted plainly rather
+  than smoothed over in `wiki/` where it's load-bearing for a page (a
+  conscious choice, not an oversight)
 
 ## Files
-- `logs/<month>/<day>.md` — full day transcripts, one line per message, clearly timestamped/attributed
-- `pinned_messages.md` — every pin event resolved to the pinned message's content
-- `index/chunks.json` — retrieval index consumed by the Telegram bot's `/ask` command
 
+- `wiki/index.md` — **start here.** Catalog of every wiki page.
+- `wiki/overview.md`, `wiki/timeline.md` — top-level synthesis.
+- `wiki/entities/*.md`, `wiki/concepts/*.md` — the actual pages.
+- `wiki/log.md` — chronological build/ingest log.
+- `raw/logs/<month>/<day>.md` — full day transcripts (the source layer).
+- `raw/pinned_messages.md` — every pin event resolved to its target message.
+- `raw/index/chunks.json` — v1's retrieval mechanism (blind keyword search
+  over 30-message windows); kept as a fallback for the long tail of ~760
+  chat participants `wiki/` hasn't seeded pages for yet.
+- `SCHEMA.md` — conventions and workflows for maintaining this wiki.

@@ -40,6 +40,16 @@ own*, without the reader needing to go dig through months of raw transcript.
   deciding whether a new page is needed. Update it every time you add or
   materially change a page.
 - `wiki/log.md` — append-only. One entry per ingest/synthesis/lint pass.
+- `wiki/_bundle.json` — **machine-generated, do not hand-edit.** Every
+  `entities/`+`concepts/`+`overview.md`+`timeline.md` page flattened into one
+  JSON array (`{id, type, title, tags, text}`), built by `build_bundle.py` in
+  the repo root. This is what the bot's `/ask` command actually fetches and
+  scores — one HTTP GET, ~140KB (vs. v1's 13MB `raw/index/chunks.json`),
+  because the whole point of `wiki/` is that a handful of curated pages beats
+  thousands of raw windows. **Run `python build_bundle.py` and commit the
+  result any time you add or edit a `wiki/entities/` or `wiki/concepts/`
+  page** — `/ask` only ever sees what's in `_bundle.json`, not the live `.md`
+  files directly.
 
 ## Page conventions
 
@@ -126,6 +136,9 @@ thirty-line invented one.
    new range, or came up in a question someone asked), consider seeding a new
    entity page — don't feel obligated to cover everyone, this compounds over
    time.
+6. Run `python build_bundle.py` and commit `wiki/_bundle.json` along with
+   whatever pages you changed. Forgetting this step means `/ask` keeps
+   answering from stale pages even after you've updated them.
 
 ### Answering a question (what `/ask` should do, and what a human session should do)
 

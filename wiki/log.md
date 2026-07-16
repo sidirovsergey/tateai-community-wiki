@@ -4,6 +4,47 @@ Append-only. Newest entries at the top. Prefix format `## [YYYY-MM-DD]
 <type> | <title>` is deliberate — `grep "^## \[" log.md | tail -5` gives the
 last 5 entries.
 
+## [2026-07-16] extend | v3: entity coverage doubled, 4 new concept pages
+
+Requested after live use of v2 surfaced that coverage (top-20 by volume) and
+depth (one synthesis pass) both had real gaps. Extended in the same pattern
+as v2's build: pre-extract raw material per subject, write a couple of
+pages by hand first (`the-terminal-mythos.md`, plus backlink patching), then
+9 parallel agents for the rest.
+
+**+22 entity pages** (Ri-ShadowAssassin, E, Whale, B, Sam, Otter Krafter,
+Asiman, Nikola, Wilson, Ohh Cedi, Anad Suji, ET, Ronald, Daniel R,
+Svyatoslav, I'm lucky, PARZIVAL, Plum, Chosen, Rari, Ekul, Jahn) — coverage
+now ~40 of 783 total senders, up from ~20.
+
+**+4 concept pages:**
+- `the-terminal-mythos.md` — traces the community's "terminal" fascination
+  from `@tate_terminalbot` (day one) through T's 2024 jailbreak attempts on
+  a different early bot, Gabriel's Mar 2025 "Band of Brothers" episode
+  (which independently ties into [[fluxcapacitor]] as a "summoning phrase"),
+  Widelton's Apr 2026 fan site, to the real bot Sergei built in May 2026 —
+  the bot is the *arrival*, not the origin, of the mythology.
+- `on-chain-forensics.md` — ties together six people's independent wallet-
+  tracing efforts across 2.75 years; documents a genuine contradiction (the
+  same 1,350 SOL transfer read as both rug evidence and bullish confirmation
+  by different investigators five days apart).
+- `the-real-world-trw.md` — Andrew Tate's paid platform, constantly cross-
+  referenced; traces Sergei's own pivot from believer to "it's a TRW
+  marketing funnel" theorist.
+- `rival-tate-coins.md` — the `$Tate`/`$DADDY`/`$RNT`/`$TOPG` roster and the
+  "cabal" vs. "brotherhood of one man" framing; found 3 more ban-for-cross-
+  promotion incidents beyond the two already documented on individual pages.
+
+**Lint pass:** all 55 pages re-verified — 579/579 raw-log citations resolve,
+0 broken cross-reference links. Added targeted backlinks to reduce orphans
+(pages with zero inbound cross-links beyond `index.md`) where agent reports
+surfaced a genuine connection; left individually-self-contained pages
+un-forced rather than padding cross-links that don't reflect anything real.
+
+Ran `python build_bundle.py` and committed the result — see `SCHEMA.md`,
+this step is mandatory after any page change or `/ask` answers from stale
+content.
+
 ## [2026-07-16] rebuild | Wiki v1 → v2: RAG chunks to a real synthesized wiki
 
 v1 (built same day, hours earlier) was a raw-source + keyword-chunk-retrieval

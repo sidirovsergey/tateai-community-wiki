@@ -79,4 +79,4 @@ months later:
 coin throughout his active period.
 
 ## Related
-[[tate-tateai-terminal-namespace]], [[sergei]], [[smiley-heartbeat]], [[gabriel]]
+[[tate-tateai-terminal-namespace]], [[the-terminal-mythos]], [[sergei]], [[smiley-heartbeat]], [[gabriel]]

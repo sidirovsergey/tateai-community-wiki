@@ -87,4 +87,4 @@ tracker site:
 > — [23 Apr 2026](../../raw/logs/2026-04/2026-04-23.md)
 
 ## Related
-[[fluxcapacitor]], [[tate-tateai-terminal-namespace]], [[smiley-heartbeat]], [[sergei]], [[diamond-hands]]
+[[fluxcapacitor]], [[tate-tateai-terminal-namespace]], [[the-terminal-mythos]], [[smiley-heartbeat]], [[sergei]], [[diamond-hands]]

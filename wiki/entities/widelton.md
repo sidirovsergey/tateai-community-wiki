@@ -90,5 +90,5 @@ actually *doing* something for the room, long after the launch-week crowd
 thinned out.
 
 ## Related
-[[smiley-heartbeat]], [[tate-tateai-terminal-namespace]], [[fluxcapacitor]],
+[[smiley-heartbeat]], [[tate-tateai-terminal-namespace]], [[the-terminal-mythos]], [[fluxcapacitor]],
 [[g_always_lucky]], [[diamond-hands]]

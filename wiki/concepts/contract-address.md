@@ -166,4 +166,4 @@ re-affirmed fact of the chat rather than something anyone is actively
 investigating.
 
 ## Related
-[[launch-and-origins]], [[tate-tateai-terminal-namespace]], [[sergei]], [[timeline]]
+[[launch-and-origins]], [[tate-tateai-terminal-namespace]], [[the-terminal-mythos]], [[sergei]], [[otter_krafter]], [[anad_suji]], [[timeline]]

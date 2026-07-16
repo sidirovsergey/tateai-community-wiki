@@ -83,4 +83,4 @@ in this chat.
 | "Terminal Subagent", "Subagent" | This project's own bot, per `docs/HANDOFF.md` in the bot repo |
 
 ## Related
-[[launch-and-origins]], [[contract-address]], [[sergei]]
+[[launch-and-origins]], [[contract-address]], [[sergei]], [[rival-tate-coins]], [[the-terminal-mythos]]

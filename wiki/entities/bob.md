@@ -89,4 +89,4 @@ owner can, we both have the same permissions i think"*), though this isn't
 confirmed as a formal admin role.
 
 ## Related
-[[tate-tateai-terminal-namespace]], [[contract-address]], [[arthur]], [[jame_s]], [[sergei]], [[community-culture]]
+[[tate-tateai-terminal-namespace]], [[the-terminal-mythos]], [[contract-address]], [[arthur]], [[jame_s]], [[sergei]], [[community-culture]]

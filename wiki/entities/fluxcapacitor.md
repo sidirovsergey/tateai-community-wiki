@@ -63,4 +63,4 @@ determinable from chat content alone — nothing here should be read as a
 claim either way.
 
 ## Related
-[[smiley-heartbeat]], [[community-culture]]
+[[smiley-heartbeat]], [[community-culture]], [[the-terminal-mythos]], [[gabriel]]
